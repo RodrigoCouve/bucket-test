@@ -36,6 +36,7 @@
             ]
         }
     },
+    "pre_install": "if(!(Test-Path(\"$dir\\retroarch.cfg\"))) { New-Item \"$dir\\retroarch.cfg\" -type file | Out-Null }",
     "persist": [
         "assets",
         "cores",
