@@ -1,1 +1,66 @@
-
+{
+    "version": "1.7.1",
+    "license": "GPL-3.0",
+    "homepage": "http://www.retroarch.com/",
+    "architecture": {
+        "64bit": {
+            "url": "https://buildbot.libretro.com/stable/1.7.1/windows/x86_64/RetroArch.7z",
+            "hash": "ED199EC8093F0B66BD52C512518E7D7DD80E17FB5384C7F5EBE8795192EDD605",
+            "bin": [
+                [
+                    "retroarch.exe",
+                    "retroarch"
+                ]
+            ],
+            "shortcuts": [
+                [
+                    "retroarch.exe",
+                    "RetroArch"
+                ]
+            ]
+        },
+        "32bit": {
+            "url": "https://buildbot.libretro.com/stable/1.7.1/windows/x86/RetroArch.7z",
+            "hash": "CA48B1A09DC74C5A8074011D07585D48C20965EDE5D5AAC6E75F2ECD11451931",
+            "bin": [
+                [
+                    "retroarch.exe",
+                    "retroarch"
+                ]
+            ],
+            "shortcuts": [
+                [
+                    "retroarch.exe",
+                    "RetroArch"
+                ]
+            ]
+        }
+    },
+	"persist": [
+		"assets",
+		"cores",
+		"playlists",
+		"records",
+		"saves",
+		"screenshots",
+		"shaders",
+		"states",
+		"system",
+		"thumbnails",
+		"retroarch.cfg"
+	],
+	"checkver": {
+		"url": "http://www.retroarch.com/?page=platforms",
+		"re": "The current stable version is: (\\d+\\.\\d+\\.\\d+)"
+	},
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://buildbot.libretro.com/stable/$version/windows/x86_64/RetroArch.7z"
+            },
+            "32bit": {
+                "url": "https://buildbot.libretro.com/stable/$version/windows/x86/RetroArch.7z"
+            }
+        }
+	}
+}
