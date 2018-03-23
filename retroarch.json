@@ -21,6 +21,7 @@
         },
         "32bit": {
             "url": "https://buildbot.libretro.com/stable/1.6.8/windows/x86/RetroArch.7z",
+		"hash": "ED199EC8093F0B66BD52C512518E7D7DD80E17FB5384C7F5EBE8795192EDD605",
             "bin": [
                 [
                     "retroarch.exe",
