@@ -1,11 +1,10 @@
 {
-    "version": "1.5.1",
+    "version": "1.6.8",
     "license": "GPL-3.0",
     "homepage": "http://www.retroarch.com/",
     "architecture": {
         "64bit": {
-            "url": "https://buildbot.libretro.com/stable/1.7.1/windows/x86_64/RetroArch.7z",
-            "hash": "ED199EC8093F0B66BD52C512518E7D7DD80E17FB5384C7F5EBE8795192EDD605",
+            "url": "https://buildbot.libretro.com/stable/1.6.8/windows/x86_64/RetroArch.7z",
             "bin": [
                 [
                     "retroarch.exe",
@@ -20,8 +19,7 @@
             ]
         },
         "32bit": {
-            "url": "https://buildbot.libretro.com/stable/1.7.1/windows/x86/RetroArch.7z",
-            "hash": "CA48B1A09DC74C5A8074011D07585D48C20965EDE5D5AAC6E75F2ECD11451931",
+            "url": "https://buildbot.libretro.com/stable/1.6.8/windows/x86/RetroArch.7z",
             "bin": [
                 [
                     "retroarch.exe",
